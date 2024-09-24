@@ -14,7 +14,7 @@ passport.use(new GoogleStrategy({
 	clientID: process.env.CLIENT_ID, 
 	clientSecret: process.env.CLIENT_SECRET,  
 	cookie: { secure: false },
-	callbackURL: "http://localhost:3000/auth/google/callback",
+	callbackURL: "https://user-management-api-ok62.onrender.com/auth/google/callback",
 	passReqToCallback: true,
 	scope:
 		['email', 'profile']
