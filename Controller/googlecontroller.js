@@ -87,8 +87,6 @@ const grtdata = async (req,res) => {
 
 
 
-
-
 module.exports = {
     successGoogleLogin,
     failureGoogleLogin,
