@@ -8,7 +8,7 @@ router.use(cors())
 
 
 const corsOptions = {
-	origin: ['http://localhost:5000', 'http://localhost:3000'], // Add both client URLs
+	origin: ['https://user-management-ui-eta.vercel.app', 'https://user-management-api-ok62.onrender.com'],
 	credentials: true,
 	optionsSuccessStatus: 200
   };
