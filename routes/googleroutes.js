@@ -48,7 +48,7 @@ router.get("/validuser",authenticate,async(req,res)=>{
 router.get('/logout' , async (req,res,next)=>{
 	req.logOut(function(err){
 		if(err){return next(err)}
-		res.redirect("https://user-management-api-zszn.onrender.com/")
+		res.redirect("https://user-management-ui-eta.vercel.app/")
 	})
 })
 
@@ -61,8 +61,8 @@ router.get('/auth/google', passport.authenticate('google', {
 // Auth Callback 
 router.get('/auth/google/callback',
 	passport.authenticate('google', {
-		successRedirect: 'https://user-management-api-zszn.onrender.com/Home',
-		failureRedirect: 'https://user-management-api-zszn.onrender.com/'
+		successRedirect: 'https://user-management-ui-eta.vercel.app/Home',
+		failureRedirect: 'https://user-management-ui-eta.vercel.app/'
 	}));
 
 
