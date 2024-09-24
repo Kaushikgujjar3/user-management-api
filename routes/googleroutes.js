@@ -21,10 +21,10 @@ router.use(passport.session());
 
 const userController = require('../Controller/googlecontroller');
 const userdb = require('../Model/usermodel')
-// const token = require('../Middleware/authantication')
 
 router.post('/signup', userController.user_sign_up);
 router.post('/login', userController.user_login );
+router.get('/', userController.grtdata );
 
 router.get('/login/success', async (req, res) => {
     // console.log("User data:", req.user);

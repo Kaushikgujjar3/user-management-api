@@ -81,6 +81,10 @@ const user_login = async (req, res) => {
     }
 };
 
+const grtdata = async (req,res) => {
+    res.render("auth")
+}
+
 
 
 
@@ -90,4 +94,5 @@ module.exports = {
     failureGoogleLogin,
     user_login,
     user_sign_up,
+    grtdata
 }
