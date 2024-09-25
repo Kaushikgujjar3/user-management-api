@@ -33,11 +33,10 @@ app.use(cors({
 }));
 
 app.use(session({
-  secret: process.env.CLIENT_SECRET,
   resave: false,
   saveUninitialized: true,
   secret: process.env.SESSION_SECRET,
-  cookie: { secure: true , httpOnly: true }
+  cookie: { secure: false }
 }));
 
 
