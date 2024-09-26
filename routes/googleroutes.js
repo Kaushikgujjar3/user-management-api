@@ -26,10 +26,10 @@ router.post('/signup', userController.user_sign_up);
 router.post('/login', userController.user_login );
 router.get('/', userController.grtdata );
 
-router.get('/login/success', async (req, res) => {
+router.get('/successlogin', async (req, res) => {
     // console.log("User data:", req.user);
     if (req.user) {
-        res.status(200).json({ message: "User Login", user: req.user });
+        res.status(200).json({ message: "User Login", user: req.user });		
     } else {
         res.status(400).json({ message: "User Not Logged In"});
     }
